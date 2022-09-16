@@ -50,6 +50,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
     if (horasTrabalhadas == 160) {
       return (meuSalario).toString();
+    }else if (horasTrabalhadas < 160) {
+      return (horasTrabalhadas * salarioHora).toString();
     } else {
       var horasExtras = (horasTrabalhadas - 160) * 1.5;
 
